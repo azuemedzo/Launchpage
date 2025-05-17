@@ -8,9 +8,6 @@ import Image from 'next/image';
 
 
 
-
-
-
 export default function Header() {
 
   const [isOpen, setIsOpen] = useState(false);
@@ -27,8 +24,6 @@ export default function Header() {
       <div className="flex items-center space-x-2">
 
 
-        {/* Image du logo de l’entreprise, chargée avec le composant Next.js */}
-
 
         <Image
 
@@ -42,7 +37,7 @@ export default function Header() {
           width={100}
 
 
-          height={50}
+          height={70}
 
 
           className="h-8 w-auto"
@@ -75,13 +70,14 @@ export default function Header() {
         <a href="#" className="hover:text-[#FFC059]">Home</a>
 
 
-        <a href="#" className="hover:text-[#FFC059]">Services</a>
+        <a href="#" className="hover:text-[#FFC059]">Features</a>
 
 
-        <a href="#" className="hover:text-[#FFC059]">Support</a>
+        <a href="#" className="hover:text-[#FFC059]">Testimonials</a>
 
 
-        <a href="#" className="hover:text-[#FFC059]">About</a>
+        <a href="#" className="hover:text-[#FFC059]">Pricing</a>
+        <a href="#" className="hover:text-[#FFC059">FAQ</a>
 
 
       </nav>
