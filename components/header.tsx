@@ -28,7 +28,7 @@ export default function Header() {
         <Image
 
 
-          src="/logos/logo.svg" // Chemin de l’image dans le dossier public
+          src="/logos/logo.svg" 
 
 
           alt="Logo de l'entreprise"
@@ -89,34 +89,22 @@ export default function Header() {
       {/* SECTION 3 : Boutons d’action visibles uniquement sur desktop */}
 
 
-      <div className="hidden md:flex space-x-4 items-center">
+      <div className="flex items-center hidden md:flex space-x-4 items-centergap-2 text-black px-3 py-1 rounded">
 
-
-        {/* Bouton de connexion avec une icône de cadenas */}
-
-
-        <button className="flex items-center gap-2 text-black px-3 py-1 rounded">
-
+    
+            <a href="#"className='hover:text-green">'>Log in</a>
 
           <Lock size={16} />
 
 
-          Login
+
+        {/* Bouton principal d'appel à l'action "Sign Up Now" avec fond vert */}
 
 
-        </button>
+        <button className="bg-[#FFC059] text-white px-3 py-1 rounded">
 
 
-
-
-
-        {/* Bouton principal d'appel à l'action "Get Started" avec fond jaune */}
-
-
-        <button className="bg-[#FFC059] text-black px-3 py-1 rounded">
-
-
-          Get Started
+          Sign Up Now
 
 
         </button>
@@ -173,31 +161,34 @@ export default function Header() {
           <a href="#" className="hover:text-[#FFC059]">Home</a>
 
 
-          <a href="#" className="hover:text-[#FFC059]">Services</a>
+          <a href="#" className="hover:text-[#FFC059]">Features</a>
 
 
-          <a href="#" className="hover:text-[#FFC059]">Support</a>
+          <a href="#" className="hover:text-[#FFC059]">Testimonials</a>
 
 
-          <a href="#" className="hover:text-[#FFC059]">About</a>
+          <a href="#" className="hover:text-[#FFC059]">Pricing</a>
+          
+          <a href="#" className="hover:text-[#FFC059]">FAQ</a>
+          
+          
 
 
 
 
+          {/* visible ici contrairement au desktop */}
 
-          {/* Bouton de connexion en version mobile, visible ici contrairement au desktop */}
 
-
-          <button className="flex items-center gap-2 text-black px-3 py-2 rounded w-full border border-gray-200">
+          className="flex items-center gap-2 text-black px-3 py-2 rounded w-full border border-gray-200"
 
 
             <Lock size={16} />
 
 
-            Login
+           <a href="#" className="hover:text-[#FFC059]">Log in</a>
 
 
-          </button>
+          
 
 
 
@@ -206,10 +197,10 @@ export default function Header() {
           {/* Bouton Get Started en plein écran mobile */}
 
 
-          <button className="bg-[#FFC059] text-black px-3 py-2 rounded w-full text-center">
+          <button className="bg-[#FFC059] text-white px-3 py-2 rounded w-full text-center">
 
 
-            Get Started
+            Sign Up Now
 
 
           </button>
