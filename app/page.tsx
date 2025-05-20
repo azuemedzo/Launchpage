@@ -1,10 +1,6 @@
 import React from "react";
 import HeroSection from "@/components/hero";
 import FeaturesSection from "@/components/featuresSection";
-import Pricing from "@/components/pricing";
-import Steps from "@/components/steps";
-import Testimonials from "@/components/testimonials";
-import FAQ from "@/components/faq";
 
 
 
@@ -14,11 +10,6 @@ export default function Page () {
            
            <HeroSection />      
            <FeaturesSection />
-           <Footer />
-           <steps />
-           <pricing />
-           <testimonials/>
-           <faq/>
         </main>
   );
 }
