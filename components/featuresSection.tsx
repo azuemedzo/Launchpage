@@ -1,52 +1,39 @@
-"use client";
-import React from "react";
-import { FileEdit } from "lucide-react";
+'use client';
 
-const features = [
-  {
-    title: "Installation rapide",
-    description: "Mettez votre landing page en ligne en quelques minutes grâce à nos modèles faciles à utiliser.",
-  },
-  {
-    title: "Personnalisation facile",
-    description: "Adaptez chaque section à votre marque sans effort.",
-  },
-  {
-    title: "Responsive design",
-    description: "Votre page s’affiche parfaitement sur tous les appareils.",
-  },
-  {
-    title: "Optimisé SEO",
-    description: "Améliorez votre visibilité sur les moteurs de recherche.",
-  },
-  {
-    title: "Support technique",
-    description: "Notre équipe vous accompagne à chaque étape.",
-  },
-  {
-    title: "Mises à jour gratuites",
-    description: "Bénéficiez des dernières fonctionnalités sans frais supplémentaires.",
-  },
-];
+import { PencilLine } from 'lucide-react';
 
 export default function FeaturesSection() {
   return (
-    // Section principale contenant deux colonnes à partir du breakpoint "md"
-    <section className="py-20 px-6 bg-white text-center">
-      <h2 className="text-3xl md:text-4xl font-bold mb-4">
-        Pourquoi choisir notre template LaunchPage ?
+    <section className="py-16 px-4 bg-white text-center">
+      {/* Badge */}
+      <div className="inline-block mb-4 px-4 py-1 text-sm bg-green-100 text-green-800 rounded-full font-medium">
+         Features
+      </div>
+
+      {/* Titre */}
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        Why Choose Our LaunchPage Template?
       </h2>
-      <p className="text-gray-600 max-w-xl mx-auto mb-12">
-        Découvrez les avantages de notre template Next.js pour lancer votre page rapidement et efficacement.
+
+      {/* Description */}
+      <p className="text-gray-600 max-w-2xl mx-auto mb-12">
+        Discover the benefits of our Next.js landing page template, designed to help you launch quickly and effectively.
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        {features.map((feature, idx) => (
-          <div key={idx} className="bg-gray-50 rounded-lg p-6 shadow text-center flex flex-col items-center">
-            <div className="flex items-center justify-center w-12 h-12 bg-teal-600 text-white rounded-full mb-4">
-              <FileEdit size={24} />
+
+      {/* Grid responsive */}
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+        {[...Array(6)].map((_, i) => (
+          <div
+            key={i}
+            className="flex flex-col items-start p-6 bg-green-50 rounded-xl text-left shadow-sm hover:shadow-md transition"
+          >
+            <div className="bg-green-600 text-white p-2 rounded-md mb-4">
+              <PencilLine size={24} />
             </div>
-            <h3 className="text-lg font-semibold">{feature.title}</h3>
-            <p className="text-gray-700 mt-2">{feature.description}</p>
+            <h3 className="text-lg font-semibold text-gray-900 mb-1">Fast Setup</h3>
+            <p className="text-sm text-gray-600">
+              Get your landing page up and running in minutes with our easy-to-use template.
+            </p>
           </div>
         ))}
       </div>
