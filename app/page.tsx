@@ -1,6 +1,11 @@
 import React from "react";
 import HeroSection from "@/components/hero";
 import FeaturesSection from "@/components/featuresSection";
+import StepsSection from "@/components/stepsSection";
+import PricingSection from "@/components/PricingSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import FAQSection from "@/components/FAQSection";
+import { Badge } from "@/components/ui/badge"
 
 
 
@@ -10,6 +15,11 @@ export default function Page () {
            
            <HeroSection />      
            <FeaturesSection />
+           <StepsSection />
+           <PricingSection />
+           <TestimonialsSection />
+           <FAQSection />
+           <Badge />
         </main>
   );
 }
