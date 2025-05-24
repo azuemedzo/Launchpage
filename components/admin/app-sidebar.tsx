@@ -1,4 +1,4 @@
-import { User, Home, Inbox, Search, Settings } from "lucide-react"
+import { User, Home, Inbox, DollarSign } from "lucide-react"
 
 import {
   Sidebar,
@@ -28,6 +28,12 @@ const items = [
     url: "/admin/user",
     icon: User,
   },
+  {
+    title: "payments",
+    url: "/admin/payments",
+    icon: DollarSign,
+  },
+  
 
 ]
 
